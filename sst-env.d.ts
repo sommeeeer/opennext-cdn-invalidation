@@ -6,6 +6,10 @@ import "sst"
 export {}
 declare module "sst" {
   export interface Resource {
+    "DistributionID": {
+      "type": "sst.sst.Secret"
+      "value": string
+    }
     "MyWeb": {
       "type": "sst.aws.Nextjs"
       "url": string
